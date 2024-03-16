@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">Home
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="d-flex my-2 my-lg-0">
+                        <input class="form-control me-sm-2" type="text" placeholder="Search" />
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Hello, world!</h1>
+                            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling
+                                extra attention to featured content or information.</p>
+                            <hr class="my-4">
+                            <p>It uses utility classes for typography and spacing to space content out within the larger
+                                container.</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                                    aria-label="First slide"></li>
+                                <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                                <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img src="https://www.w3schools.com/bootstrap/ny.jpg" class="w-100 d-block"
+                                        alt="First slide" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://www.w3schools.com/bootstrap/la.jpg" class="w-100 d-block"
+                                        alt="Second slide" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://www.w3schools.com/bootstrap/chicago.jpg" class="w-100 d-block"
+                                        alt="Third slide" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselId"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="card d-flex flex-row p-3 mb-3" style="width: 27rem;">
+                            <div class="">
+                                <img class="card-img-bottom" style="width: 5rem;"
+                                    src="https://www.w3schools.com/bootstrap/ny.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Title</h5>
+                                <p class="card-text">Content</p>
+                                <a href="">view card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card mb-3" style="width: 27rem;">
+                            <div class="form-group p-3">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="keyword">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Chủng loại
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">điện thoại di động</li>
+                                            <li class="list-group-item">máy tính xác tay </li>
+                                            <li class="list-group-item">máy tính dể bàn </li>
+                                            <li class="list-group-item">quạt máy</li>
+                                            <li class="list-group-item">tivi</li>
+                    
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        NHÀ CUNG CẤP
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">điện thoại di động</li>
+                                            <li class="list-group-item">máy tính xác tay </li>
+                                            <li class="list-group-item">máy tính dể bàn </li>
+                                            <li class="list-group-item">quạt máy</li>
+                                            <li class="list-group-item">tivi</li>
+                    
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        HÀNG DẶC BIỆT
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -9,3 +9,9 @@ Bài 1: Giới thiệu bs
 col-sm-4 : Tạo 1 cột trên thiết bị sm ,có độ rộng là 4/12
 4.Tạo lưới bs
 -Cài đặt công cụ sử dụng
+
+
+buổi 3: 
+1.Jumbotron: tạo nội dung nổi bật
+card: tạo các sản phẩm,thông tin
+b4-card : header,body,footer
