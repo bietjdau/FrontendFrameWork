@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        header {
+            position: relative;
+        }
+
+        .shopping-mall {
+            position: absolute;
+            bottom: 20px;
+            font-variant: small-caps;
+        }
+
+        .shopping-mall>h1 {
+            font-family: Impact;
+            font-size: 50px;
+            color: white;
+            letter-spacing: 0.3px;
+            text-shadow: 00 2px black;
+            padding-bottom: 0px;
+            border-bottom: 1px dotted gray;
+            margin: 0px;
+        }
+
+        .shopping-mall>h5 {
+            margin-top: 5px;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <header class="row">
+            <div class="shopping-mall">
+                <h1>Online shopping mall</h1>
+                <h5>the center point of the professional programming</h5>
+            </div>
+            <img src="data:image/jpeg;base64,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"
+                alt="">
+        </header>
+
+        <nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
+
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Trang Chu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" aria-current="page">Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Góp ý</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hỏi đáp</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Tài khoản</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">đăng nhập</a>
+                        <a class="dropdown-item" href="#">quên mật khẩu</a>
+                        <a class="dropdown-item" href="#">đăng ký thành viên</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">đăng xuất</a>
+                        <a class="dropdown-item" href="#">đổi mật khẩu</a>
+                        <a class="dropdown-item" href="#">cập nhật hồ sơ</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">đơn hàng</a>
+                        <a class="dropdown-item" href="#">hàng đã mua</a>
+                        <div class="dropdown-divider"></div>
+
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="row">
+            <article class="col-sm-9">
+                <div class="row mb-3">
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="images/shoppingcart.gif" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="images/shoppingcart.gif" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="images/shoppingcart.gif" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="images/shoppingcart.gif" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="images/shoppingcart.gif" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="images/shoppingcart.gif" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="images/shoppingcart.gif" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="images/shoppingcart.gif" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <aside class="col-sm-3">
+                <div class="card d-flex flex-row p-3 mb-3" style="width: 27rem;">
+                    <div class="">
+                        <img class="card-img-bottom" style="width: 5rem;" src="images/shoppingcart.gif" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Title</h5>
+                        <p class="card-text">Content</p>
+                        <a href="">view card</a>
+                    </div>
+                </div>
+                <div class="card mb-3" style="width: 27rem;">
+                    <div class="form-group p-3">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="keyword">
+                    </div>
+                </div>
+                <div class="card" style="width: 27rem;">
+                    <div class="card-header">
+                        Chủng loại
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">điện thoại di động</li>
+                        <li class="list-group-item">máy tính xác tay </li>
+                        <li class="list-group-item">máy tính dể bàn </li>
+                        <li class="list-group-item">quạt máy</li>
+                        <li class="list-group-item">tivi</li>
+
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <footer class="row">
+
+            <div class="col-sm-12 card-footer ">
+                <p>FPT Polytechnic &copy; 2017. All rights reserved.</p>
+            </div>
+    </div>
+    </footer>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
