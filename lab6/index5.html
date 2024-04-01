@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"
+        integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+    <main>
+        <div class="container" ng-app="myapp" ng-controller="myctrl">
+            <div class="card">
+                <div class="card-header">
+                    custum validation
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="">số poly</label>
+                        <input type="number" ng-model="number" class="form-control" name="txtNumber" poly-number id="">
+                        <small id="helpId" class="form-text text-muted">số này không chia hết cho 2 và 9</small>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="">
+                        <button ng-click="checkNumber()">kiểm tra</button>
+                    </div>
+                </div>
+                <div ng-show="result !== undefined">
+                    <p>
+                        Số {{ number }} {{ result ? ' là ' : ' không phải là ' }} số poly.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script>
+            var app = angular.module("myapp", []);
+            app.directive("polyNumber", function () {
+                return {
+                    require: "ngModel",
+                    link: function (scope, element, attr, mCtrl) {
+                        mCtrl.$parsers.push(function (value) {
+                            var number = parseInt(value);
+                            if (number % 2 !== 0 && number % 9 !== 0) {
+                                mCtrl.$setValidity('charE', true);
+                            }
+                            else {
+                                mCtrl.$setValidity('charE', false);
+                            }
+                            return value;
+                        });
+                    }
+                }
+            });
+            app.controller("myctrl", function ($scope) {
+                $scope.checkNumber = function () {
+                    $scope.result = $scope.number % 2 !== 0 && $scope.number % 9 !== 0;
+                };
+            });
+        </script>
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"
+        integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+    <main>
+        <div class="container" ng-app="myapp" ng-controller="myctrl">
+            <div class="card">
+                <div class="card">
+                    <div class="card-header">
+                        Tính thưởng tết nguyên đán
+                    </div>
+                    <div class="card-body">
+                        <form action="" name="frmBonus">
+                            <div class=" mb-3">
+                                <label for="" class="form-label">Họ và tên</label>
+                                <input ng-model="fullname" type="text" name="txtFullname" required id="" class="form-control" placeholder=""
+                                    aria-describedby="helpId" />
+                                <span ng-show="frmBonus.txtFullname.$invalid">vui lòng nhập họ và tên</span>
+                            </div>
+                            <div>
+                                <label for="" class="form-label">Lương</label>
+                                <div class="input-group mb-3">
+                                    <input ng-model="salary" type="number" name="txtSalary" min="2000000" required class="form-control"
+                                        aria-describedby="basic-addon1">
+                                    <span class="input-group-text" id="basic-addon1">VNĐ</span>
+                                </div>
+                                <span ng-show="frmBonus.txtSalary.$invalid">vui lòng nhập lương ít nhất 2 triệu</span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Giới tính</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input ng-model="gender" type="radio" value="nam" class="form-check-input"
+                                            name="sex" id="">
+                                        Nam
+                                    </label>
+                                    <br>
+                                    <label class="form-check-label">
+                                        <input ng-model="gender" type="radio" value="nu" class="form-check-input" name="sex"
+                                            id="">
+                                        Nữ
+                                    </label>
+    
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="">Tuổi</label>
+                                <select class="form-control" ng-model="age" name="" id="" ng-options="x.age for x in ages">
+    
+                                </select>
+                            </div>
+                            <h4 ng-show="frmBonus.$valid">
+                                Chúc mừng bạn đã nhập đứng
+                            </h4>
+    
+    
+                        </form>
+
+                    </div>
+                    <div class="card-footer">
+                        tiền thưởng : <strong>{{getBonus()|number:2}}</strong>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            var app = angular.module('myapp', []);
+            app.controller('myctrl', function ($scope) {
+
+                $scope.ages = [{
+                    age: "Dưới 25",
+                    rate: 0.07
+                },
+                {
+                    age: "Từ 25 đến 40",
+                    rate: 0.1
+                },
+                {
+                    age: "Trên 40",
+                    rate: 0.15
+                }
+                ];
+                $scope.age = $scope.ages[1];
+                $scope.gender = "nam";
+                $scope.getBonus = function () {
+                    var bonus = $scope.age.rate * $scope.salary;
+                    if ($scope.gender == "nu") {
+                        bonus += 200000;
+                    }
+                    return bonus;
+                }
+
+            });
+        </script>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
