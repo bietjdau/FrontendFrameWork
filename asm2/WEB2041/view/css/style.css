@@ -1,0 +1,599 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 0.7vw;
+}
+
+.boxcenter {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.row {
+    float: left;
+    width: 100%;
+}
+
+.mb {
+    margin-bottom: 20px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mr {
+    margin-right: 2%;
+}
+
+.demo {
+    background-color: antiquewhite;
+    min-height: 100px;
+}
+
+.header {
+    background-color: aquamarine;
+    border: 1px #090 solid;
+    color: blue;
+    border-radius: 5px;
+}
+
+.header h1 {
+    margin: 20px;
+    font-size: 1.2vw;
+}
+
+.menu {
+    background-color: black;
+    color: #ccc;
+    border-radius: 5px;
+}
+
+.menu li:hover {
+    background-color: orangered;
+}
+
+.footer {
+    background-color: aquamarine;
+    border: 1px #090 solid;
+    font-size: 0.8vw;
+    color: blue;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.boxleft {
+    float: left;
+    width: 74%;
+}
+
+.boxright {
+    float: left;
+    width: 24%;
+}
+
+.boxtitle {
+    color: #333;
+    padding: 10px;
+    background-color: #eee;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px #ccc solid;
+
+}
+
+.boxcontent {
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+
+.boxcontent2 {
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+    background-color: #eee;
+}
+
+.boxfooter {
+    padding: 10px;
+    background-color: #eee;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+}
+
+.banner {
+    min-height: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.banner img {
+    height: 300px;
+
+}
+
+.boxsp {
+    float: left;
+    width: 32%;
+    min-height: 300px;
+    border: 1px #eee solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.boxsp .img {
+    min-height: 220px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.boxsp p {
+    padding-left: 2%;
+    font-size: 1vw;
+
+
+}
+
+.boxsp p:hover {
+    color: coral;
+}
+
+.boxsp a {
+    padding-left: 2%;
+    text-decoration: none;
+    font-size: 0.9vw;
+    color: red;
+}
+
+.boxsp a:hover {
+    text-decoration: underline;
+    color: coral;
+}
+
+.img img {
+    width: 60%;
+    height: 220px;
+}
+
+.menu ul {
+    padding: 0px 10px;
+}
+
+.menu ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 0px 15px;
+}
+
+.menu ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.menu ul li a:hover {
+    color: #ffff;
+    font-size: 0.8vw;
+}
+
+.formtk {
+    line-height: 150%;
+}
+
+.formtk input[type="text"],
+.formtk input[type="email"],
+.formtk input[type="password"],
+.formcontent input[type="text"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.formtk input[type="checkbox"] {
+    border-radius: 5px;
+}
+
+.formtk input[type="submit"],
+.formcontent input[type="submit"],
+.formcontent input[type="reset"],
+.formtk input[type="reset"],
+.formcontent input[type="button"] {
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #ffff;
+    border: #ccc 1px solid;
+
+}
+
+.formtk input[type="submit"]:hover,
+.formcontent input[type="submit"]:hover,
+.formcontent input[type="reset"]:hover,
+.formcontent input[type="button"]:hover {
+    background-color: #666666;
+    color: #ffff;
+
+}
+
+.formtk li a {
+    color: teal;
+    text-decoration: none;
+}
+
+.formtk li a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.menudoc ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menudoc ul li {
+    padding: 10px 20px;
+    background-color: #eee;
+    border-bottom: 1px #ccc solid;
+}
+
+.menudoc ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.menudoc ul li:hover {
+    background-color: #ffff;
+
+}
+
+.searchbox iput[type="text"] {
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.top10 img {
+    width: 20%;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px #eee solid;
+}
+
+.top10 a {
+    color: #666;
+    text-decoration: none;
+}
+
+.top10 a:hover {
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+/*ADmin*/
+.headerad {
+    background-color: #eee;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    color: #666;
+    padding: 10px 20px;
+}
+
+.headerad h1 {
+    font-size: 2vw;
+}
+
+.formtitle {
+    background-color: #eee;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    color: #666;
+    padding: 0px 20px;
+}
+
+.formcontent {
+    padding: 20px 0px;
+
+}
+
+/*danh sách loại hàng*/
+.formdsloai table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px #999 solid;
+}
+
+.formdsloai table th {
+    padding: 20px;
+    background-color: #ccc;
+}
+
+/* .formdsloai table th:nth-child(2){
+    width: 30%;
+    background-color: #ccc;
+}
+.formdsloai table th:nth-child(3){
+    width: 40%;
+    background-color: #ccc;
+}
+.formdsloai table th:nth-child(4){
+    width: 20%;
+    background-color: #ccc;
+} */
+.formdsloai table td {
+    padding: 10px 20px;
+    border: #999 1px solid;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -30px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.6s ease;
+    border-radius: 0 2px 2px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* end slide show*/
+.spct {
+    text-align: center;
+}
+
+.spct img {
+    width: 50%;
+}
+
+.anhsp img {
+    width: 80%;
+    height: 60%;
+    padding-top: 10px;
+}
+
+.thongbao {
+    color: red;
+}
+
+
+.billform input {
+    margin: 5px 10px 10px 0px;
+    padding: 5px 50px 5px 50px;
+}
+
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px #999 solid;
+}
+
+.cart table th {
+    padding: 10px;
+    background-color: #ccc;
+}
+
+.cart table td {
+    padding: 10px 20px;
+    border: #999 1px solid;
+}
+
+.info td {
+    padding-left: 30px;
+
+}
+
+.gt h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+}
+
+.gt p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333333;
+    margin: 10px;
+}
+
+.gt ul {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333333;
+    list-style-type: disc;
+}
+
+.gt li {
+    margin: 5px;
+}
+
+.gt a {
+    color: #0000FF;
+    text-decoration: none;
+}
+
+.gt a:hover {
+    text-decoration: underline;
+}
+
+/**css liên hệ*/
+.main {
+    display: flex;
+}
+
+.main .form {
+    width: 60%;
+    padding: 10px;
+}
+
+.main .form h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333333;
+}
+
+.main .form p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+
+.main .form label {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+
+.main .form input,
+textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.main .form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0000FF;
+    color: white;
+}
+
+.main .map {
+    width: 40%;
+}
+
+.main .map iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+
+}
+
+/**css góp ý*/
+.gopy {
+    padding: 10px;
+}
+
+.gopy input {
+    padding: 7px 20px 7px 20px;
+    margin: 20px;
+}
+
+.gopy textarea {
+    margin: 10px;
+}
+
+.gopy form button {
+    width: 10%;
+    padding: 8px;
+    background-color: gainsboro;
+    color: black;
+}
+.btnaddtocart input{
+    padding: 8px 8px;
+    margin:8px 0px 8px 0px;
+}
+.btnaddtocart input:hover{
+   background-color: orangered;
+   color: white;
+}
