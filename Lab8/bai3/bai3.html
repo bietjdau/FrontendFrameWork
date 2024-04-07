@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="../public/js/jquery.min.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+
+    <script src="../public/js/angular.min.js"></script>
+    <script src="../public/js/angular-route.js"></script>
+
+</head>
+
+<body>
+    <div class="container" ng-app="myapp">
+
+        <header ng-include="'header.html'"></header>
+        <hr>
+
+        <nav ng-include="'menu.html'"></nav>
+        <hr>
+
+        <article>
+            <div ng-show="loading" class="pull-right label label-info">Loading...</div>
+            <ng-view></ng-view>
+        </article>
+        <hr>
+
+        <footer ng-include="'footer.html'"></footer>
+
+    </div>
+
+    <script src="webapp.js"></script>
+</body>
+
+</html>
